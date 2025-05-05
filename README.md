@@ -65,21 +65,12 @@
 | Anthropic | Claude 3 Opus | $15 / 1M tokens | $75 / 1M tokens | 200K上下文，Prompt caching write: $18.75，Prompt caching read: $1.50，批处理5折 |
 | Anthropic | Claude 3.5 Sonnet（旧版） | $3 / 1M tokens | $15 / 1M tokens | 200K上下文，Prompt caching write: $3.75，Prompt caching read: $0.30，批处理5折 |
 | Anthropic | Claude 3 Haiku（旧版） | $0.25 / 1M tokens | $1.25 / 1M tokens | 200K上下文，Prompt caching write: $0.30，Prompt caching read: $0.03，批处理5折 |
-| Google | Gemini 2.5 Flash（预览） | 0.15美元/百万tokens（文本/图/视频）
-1.00美元/百万tokens（音频） | 0.60美元/百万tokens（非思考）
-3.50美元/百万tokens（思考） | 100万上下文，预览版，缓存即将推出 |
-| Google | Gemini 2.5 Pro（预览） | 1.25美元/百万tokens（≤20万tokens）
-2.50美元/百万tokens（>20万tokens） | 10美元/百万tokens（≤20万tokens）
-15美元/百万tokens（>20万tokens） | 多用途，缓存$0.31/$0.625，100万上下文，预览版 |
-| Google | Gemini 2.0 Flash | 0.10美元/百万tokens（文本/图/视频）
-0.70美元/百万tokens（音频） | 0.40美元/百万tokens | 100万上下文，缓存$0.025/$0.175，Live API输入$0.35/$2.10，输出$1.50/$8.50 |
+| Google | Gemini 2.5 Flash（预览） | 0.15美元/百万tokens（文本/图/视频）<br>1.00美元/百万tokens（音频） | 0.60美元/百万tokens（非思考）<br>3.50美元/百万tokens（思考） | 100万上下文，预览版，缓存即将推出 |
+| Google | Gemini 2.5 Pro（预览） | 1.25美元/百万tokens（≤20万tokens）<br>2.50美元/百万tokens（>20万tokens） | 10美元/百万tokens（≤20万tokens）<br>15美元/百万tokens（>20万tokens） | 多用途，缓存$0.31/$0.625，100万上下文，预览版 |
+| Google | Gemini 2.0 Flash | 0.10美元/百万tokens（文本/图/视频）<br>0.70美元/百万tokens（音频） | 0.40美元/百万tokens | 100万上下文，缓存$0.025/$0.175，Live API输入$0.35/$2.10，输出$1.50/$8.50 |
 | Google | Gemini 2.0 Flash-Lite | 0.075美元/百万tokens | 0.30美元/百万tokens | 最小模型，适合大规模使用 |
-| Google | Gemini 1.5 Flash | 0.075美元/百万tokens（≤128K）
-0.15美元/百万tokens（>128K） | 0.30美元/百万tokens（≤128K）
-0.60美元/百万tokens（>128K） | 100万上下文，缓存$0.01875/$0.0375，调优免费 |
-| Google | Gemini 1.5 Pro | 1.25美元/百万tokens（≤128K）
-2.50美元/百万tokens（>128K） | 5美元/百万tokens（≤128K）
-10美元/百万tokens（>128K） | 200万上下文，缓存$0.3125/$0.625，调优免费 |
+| Google | Gemini 1.5 Flash | 0.075美元/百万tokens（≤128K）<br>0.15美元/百万tokens（>128K） | 0.30美元/百万tokens（≤128K）<br>0.60美元/百万tokens（>128K） | 100万上下文，缓存$0.01875/$0.0375，调优免费 |
+| Google | Gemini 1.5 Pro | 1.25美元/百万tokens（≤128K）<br>2.50美元/百万tokens（>128K） | 5美元/百万tokens（≤128K）<br>10美元/百万tokens（>128K） | 200万上下文，缓存$0.3125/$0.625，调优免费 |
 | 阿里云 | 通义千问-Max | 0.0024元/千 Token | 0.0096元/千 Token | 上下文32,768Token，100万Token免费 |
 | 阿里云 | 通义千问-Plus | 0.0008元/千 Token | 0.002元/千 Token | 上下文131,072Token，100万Token免费 |
 | 阿里云 | 通义千问-Turbo | 0.0003元/千 Token | 0.0006元/千 Token | 上下文1,000,000Token，100万Token免费 |
