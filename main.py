@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 from agents.mcp import MCPServer, MCPServerStdio
 from datetime import datetime
 
-from openai import AsyncOpenAI
+# from openai import AsyncOpenAI
+from langfuse.openai import AsyncOpenAI
 
 from agents import (
     Agent,
@@ -28,8 +29,8 @@ load_dotenv()
 AGENT_CONFIG = {
     "parser_agent": True,      # 解析提供商列表的agent
     "provider_agent": True,    # 处理单个提供商的agent
-    "summary_agent": True,     # 汇总结果的agent
-    "notion_agent": True       # 更新Notion的agent
+    "summary_agent": False,     # 汇总结果的agent
+    "notion_agent": False       # 更新Notion的agent
 }
 
 BASE_URL = os.getenv("EXAMPLE_BASE_URL") or ""
@@ -259,22 +260,6 @@ async def run_parser_agent(providers_text: str):
     print("提供商解析完成")
     return result.final_output
 
-
-async def main_with_write_tool():
-    """使用文件写入工具的简单示例"""
-    agent = Agent(
-        name="Assistant",
-        instructions="你是一个助手，可以将数据保存到文件中。",
-        model=MODEL_NAME,
-        tools=[write_to_file],
-    )
-
-    message = "请创建一个名为'hello.txt'的文件，内容为'Hello, World!'"
-    print(f"Running: {message}")
-    result = await Runner.run(starting_agent=agent, input=message)
-    print(result.final_output)
-
-
 @function_tool
 def read_from_file(file_path: str):
     """
@@ -465,18 +450,8 @@ async def main():
     
     # 提供商列表文本
     providers_text = """
-## OpenAI
-https://openai.com/api/pricing/
-
-## Gemini
-https://ai.google.dev/gemini-api/docs/pricing?hl=zh-cn
-
-## Anthropic
-https://www.anthropic.com/pricing#api
-
-## Grok
-https://x.ai/api#pricing
-
+## 阿里云
+https://help.aliyun.com/zh/model-studio/models
 """
 
     # 从环境变量获取FIRECRAWL_API_KEY

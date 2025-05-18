@@ -16,6 +16,7 @@ dependencies = [
     "openai-agents>=0.0.1",
     "uvx>=0.1.0",
     "python-dotenv>=1.0.0",
+    "langfuse>=2.60.5",
 ]
 
 [project.optional-dependencies]
