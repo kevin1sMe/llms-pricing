@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "finalhandler": "^2.1.0",
+    "on-finished": "^2.4.1"
+  }
+}
