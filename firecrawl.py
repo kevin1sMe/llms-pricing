@@ -12,6 +12,7 @@ from agents import (
     set_default_openai_api,
     set_default_openai_client,
     set_tracing_disabled,
+    trace
 )
 
 # 加载.env文件中的环境变量
